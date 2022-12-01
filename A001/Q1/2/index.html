@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Lorem</h1>
-    <p1 id="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum facere explicabo illo ducimus sed fugit inventore repellendus temporibus eum animi similique, ut delectus minima quasi iure fuga ea quo omnis aliquid natus et excepturi repellat. Rem nisi voluptatum autem molestiae veniam sunt animi quam nihil alias nostrum ducimus iste perferendis consectetur sapiente assumenda hic perspiciatis labore a delectus dolorum, veritatis, ullam saepe! Incidunt ducimus in accusantium iusto minus, laboriosam quasi ipsa doloribus quae, doloremque quisquam unde dicta et ab totam libero non ratione impedit culpa reprehenderit. Saepe unde ducimus natus perferendis nobis ipsa, expedita magnam. Voluptas perspiciatis expedita soluta? Eaque ullam magnam impedit nihil necessitatibus veritatis, veniam assumenda expedita facilis, non asperiores neque dolore modi quae! In consectetur, iusto sit numquam ea delectus quaerat perspiciatis provident repellat. Debitis blanditiis magnam fugiat impedit in perspiciatis earum dolor, qui explicabo modi officiis aperiam, pariatur, expedita facilis? Tempora dolor molestias similique beatae delectus voluptatum quia alias dignissimos. Aut cupiditate quia, eos similique consequatur voluptatem aliquid voluptatum distinctio accusamus, reiciendis, quo quam itaque labore! Quis aspernatur quibusdam voluptas saepe debitis corporis, voluptatibus quam atque et ducimus non veniam vel minima praesentium sed ex consectetur officiis architecto totam unde recusandae accusantium. Commodi beatae officia ipsum natus est recusandae delectus labore magnam! Illo velit, maiores nesciunt quae maxime facere enim rerum, sit quaerat doloremque eos consectetur. Aut enim itaque, soluta fugit quaerat dolor, ducimus perferendis recusandae et deserunt beatae obcaecati officiis. Deleniti veritatis corporis deserunt quia nulla! Animi necessitatibus quis beatae, reiciendis ipsum rerum blanditiis deleniti quae perspiciatis repellat officia aliquid, quaerat modi omnis reprehenderit eaque libero labore nisi. Ab sequi repellat odit ea illo sunt cumque accusantium nihil est aliquam omnis vitae dicta, quas facere a voluptate aspernatur, ex quaerat eligendi? Quae, asperiores. Voluptatum eius corporis saepe, ipsa obcaecati fugit qui excepturi aperiam doloremque delectus? Quas aliquid cupiditate sit commodi optio, cumque accusantium vitae possimus consequatur facilis tenetur perferendis rem accusamus dolor error distinctio nemo illo eveniet maxime saepe voluptatibus officiis. Veritatis nisi maiores sapiente magnam blanditiis quos accusamus odio quaerat ipsam nihil nostrum amet debitis reprehenderit voluptatum enim recusandae pariatur ipsa illum, temporibus beatae quis et. Voluptatibus excepturi praesentium corrupti ipsum at aliquid earum harum eligendi, tempore iste molestiae, quam blanditiis adipisci vero dolores, fuga minus commodi error quasi vel consequuntur? Perspiciatis rem eligendi quis saepe magni quas, cum provident possimus. Tempore quam similique molestiae necessitatibus numquam est expedita earum labore minima iste deleniti excepturi veritatis, ab porro repellat alias dolor sint quos asperiores ad? Aperiam amet quas inventore minus ipsum officiis eveniet qui ipsam, modi voluptas voluptate dolorum consectetur. Voluptate animi, similique temporibus quis fuga molestiae, minus laudantium explicabo inventore quae repudiandae officiis voluptatem nam vitae modi omnis. Est unde, iure rerum debitis ipsa ratione officia enim distinctio perspiciatis soluta, quis molestias cumque. Ad, velit sapiente doloribus consectetur iure quam at impedit, provident beatae doloremque obcaecati enim iusto quo eaque! Debitis veritatis aspernatur eligendi, corporis quidem delectus ut fuga voluptatum, ratione voluptatem beatae ab, architecto sequi cum perspiciatis. Laborum quod id sit.</p1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <button type="submit" id="Dark Mode" onclick="modechange()">Dark Mode</button>
-    <script src="script.js"></script>
+
+
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, totam veritatis accusamus eveniet debitis quam similique fugiat obcaecati eius voluptate iure ad aliquam quaerat! Suscipit quos consequuntur voluptatibus architecto enim.
+    </p>
+
+    <button id="ldmde" onclick="lswtich()">SWITCH TO DARK MODE </button>
+    <script>
+        var dark = true;
+        var para = document.getElementById("par");
+        var btn = document.getElementById("ldmde");
+        function lswtich(){
+                if(dark){
+                   
+                    para.style.color = "white";
+                    document.body.style.background = "black";
+                    dark = !dark;
+                    btn.innerHTML = "SWITCH TO LIGHT MODE";
+
+                }else{
+                    para.style.color = "black";
+                    document.body.style.background = "white";
+                    dark = !dark;
+                    btn.innerHTML = "SWITCH TO DARK MODE";
+                }
+               
+        }
+    </script>
 </body>
 </html>
